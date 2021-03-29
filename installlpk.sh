@@ -17,4 +17,4 @@ ln -sf /usr/share/linpack/xlinpack_xeon64 /usr/sbin/
 
 # adjust path in runme_xeon64
 #sed -i s'|./xlinpack_$arch lininput_$arch|/usr/sbin/xlinpack_$arch /usr/share/linpack/lininput_$arch|g' /usr/sbin/runme_xeon64
->
+#>
