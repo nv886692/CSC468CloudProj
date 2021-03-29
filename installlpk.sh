@@ -9,7 +9,7 @@ wget ${URL} -O /tmp/l_lpk.tgz
 tar -xzf /tmp/l_lpk.tgz -C /tmp/
 
 # copy linpack to /usr/share directory
-cp -a /tmp/l_mklb_p_*/benchmark*/linpack /usr/share
+cp -a /tmp/l_mklb_p_/benchmark/linpack /usr/share
 
 # create soft links to executables
 ln -sf /usr/share/linpack/runme_xeon64 /usr/sbin/
