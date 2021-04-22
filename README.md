@@ -1,3 +1,3 @@
 # CSC468CloudProj
 Cody, Dominic, Sarah, Noah
-linpack, redis, nuttcp
+linpack, random access, and stream
