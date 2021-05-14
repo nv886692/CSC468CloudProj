@@ -29,6 +29,6 @@ NATIVE LINUX:
 Run 'sudo apt-get install numactl'
 
 -running the commands :  
-1socket. 'numactl --physcpubind=0-7,16-23 --localalloc ./stream.exe'
-2socket. 'numactl --physcpubind=0-31 --interleave=0,1 ./stream.exe'
+1. 'numactl --physcpubind=0-7,16-23 --localalloc ./stream.exe'
+2. 'numactl --physcpubind=0-31 --interleave=0,1 ./stream.exe'
 will run the Stream benchmark natively
