@@ -18,7 +18,7 @@ DOCKER:
       
  run 'docker build -t nameHere .'  to build the image 
  
- run 'docker run -it --privileged nameHere' ro run the image
+ run 'docker run -it --privileged nameHere' to run the image
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NATIVE LINUX:
