@@ -11,11 +11,11 @@ DOCKER:
 
  run 'nano Dockerfile' and input this code:
       ```
-      FROM ubuntu
-      RUN apt-get update
-      RUN apt-get -qq install -y libgomp1 numactl
-      ADD bin /
-      CMD numactl --physcpubind=0-7,16-23 --localalloc /gups.exe
+      FROM ubuntu\n
+      RUN apt-get update\n
+      RUN apt-get -qq install -y libgomp1 numactl\n
+      ADD bin /\n
+      CMD numactl --physcpubind=0-7,16-23 --localalloc /gups.exe\n
       ```
  run 'docker build -t nameHere .'  to build the image 
  
@@ -27,6 +27,6 @@ NATIVE LINUX:
 Run 'sudo apt-get install numactl'
 
 -running the commands :   
-                       ```numactl --physcpubind=0-7,16-23 --localalloc ./gups.exe
+                       ```numactl --physcpubind=0-7,16-23 --localalloc ./gups.exe\n
                           numactl --physcpubind=0-31 --interleave=0,1 ./gups.exe```
 will run Random Access benchmark natively
